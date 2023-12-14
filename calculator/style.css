@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-color: #d6d6d6;
+  --light-color: #d6d6d6;
+  --dark-color: #606060;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme-color);
+}
+
+.cal-container {
+  background-color: #d6d6d6;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.175) 0px 5px 15px,
+    rgb(255, 255, 255) -5px -5px 15px;
+}
+.display {
+  width: 100%;
+  height: 50px;
+  padding-inline: 10px;
+  box-shadow: rgba(0, 0, 0, 0.175) 0px 5px 15px,
+    rgb(255, 255, 255) -5px -5px 15px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+.btns .btn {
+  height: 50px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgb(158, 158, 158) 2px 0px 5px 0px,
+    rgb(158, 158, 158) 0px 2px 5dvi 0px;
+
+  box-shadow: rgba(0, 0, 0, 0.175) 0px 5px 15px,
+    rgb(255, 255, 255) -2px -2px 15px, 2px 2px 0 0 black;
+
+  border-radius: 10px;
+  font-size: 18px;
+
+  /* border-right: 2px solid rgb(149, 149, 149);
+  border-bottom: 2px solid rgb(149, 149, 149); */
+}
+
+.btns .btn.operator {
+  background-color: rgb(233, 233, 233);
+
+  /* color: white; */
+}
+
+.btns .btn:active {
+  transform: translateY(2px) translateX(2px);
+  box-shadow: none;
+}
